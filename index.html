@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <script src="triviagame.js"></script>
+</head>
+
+
+<head>
+  
+</head>
+
+<body>
+    <div id="firstScreen">
+        <div class="firstBox">
+            <h3>Welcome to</h3>
+            <h1>History Trivia!</h1>
+            <hr/>
+            <p>You have one minute to answer 10 questions.</p>
+            <br />
+            <p>Click To Start</p>
+            <button type="button" id="start-btn" class="btn btn-primary black-background white">I hope you are ready.</button>
+        </div>
+    </div>
+
+    <div id="answerScreen">
+        <div class="secondbox">
+            <p id="correctScreen">Correct Answers: </p>
+            <p id="wrongScreen">Wrong Answers: </p>
+        </div>
+    </div>
+
+
+    <div id="timesUp">
+        <div class="wrongBox">
+            <h2 class="up">Times Up!</h2>
+            <hr />
+            <p>Here's youre score:</p>
+            <p id="rightTimesUp">Correct Answers: </p>
+            <p id="wrongTimesUp">Wrong Answers: </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>History</header>
+        <div class="row time-remain">Time Remaining:
+            <div id="time-remain">60</div>
+        </div>
+
+        <div class="questions">
+            <button type="button" class="btn btn-primary black-background white" id="Submit">Submit</button>
+            
+        </div>
+
+     
+    </div>
+</body>
+</html>
