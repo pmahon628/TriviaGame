@@ -1,28 +1,6 @@
-h1, h2{
-    color: red;
-}
-
-#firstScreen{
-    text-align: center;
-}
-
-#answerScreen{
-    text-align: center;
-}
-
-#timesUp{
-    text-align: center;
-    color: blue;
-}
-
-#container{
-    text-align: center;
-}
-
-.time-remain{
-    text-align: center;
-}
-
-#questions{
-    text-align: center;
+.card {
+    padding: 20px;
+    }
+.Container {
+    padding: 10px;
 }
