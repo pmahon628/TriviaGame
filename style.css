@@ -4,3 +4,8 @@
 .Container {
     padding: 10px;
 }
+
+.btn {
+    justify-content: center;
+    padding: 20px;
+}

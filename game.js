@@ -1,84 +1,9 @@
-var myQuestions =[
-    {
-        question: "What year did the Battle of Hastings Occur?",
-        answers: ["1115", '1066', '1123', '987'],
-        name: '1066',
-        correct: '1066',
-         },
-    {
-        question: "What river did the U.S and Britsh forces first cross to get into Germany in WW2?",
-         answers: ['Danube', 'Elbe', 'Rhine', 'Seine'],
-         name: 'Rhine',
-        correct: 'Rhine'
-      },
+$( document ).ready(function() {
 
-    {
-         question: "Who was king of England during the American Revolution?",  
-         answers: ['Henrey VII', 'George VI', 'George III', 'George II'],
-         name: 'George III',
-         corect: 'George III',
-     }, 
-        {
-         question: "Who was the last king of Russia, and when did he die?",
-         answers: ['Nicholas II, 1918', 'Charles III, 1917', 'Nicholas II 1917', 'Ivan IV, 1914'],
-          name: 'Nicholas II, 1918',
-          correct: 'Nicholas II, 1918',
-        },
-        {
-            question: 'Who was the first secretary of treasury?',
-            answers: ['Thomas Jefferson', 'Ben Franklin', 'Alexander Hamilton', 'John Adams'],
-            answer: 'Alexander Hamilton',
-             name: 'Alexander Hamilton',
-              
-          },
-        {
-            question: 'This person became president after Lincoln died',
-            answers:['Ulysses Grant', 'Franklin Pierce', 'James Buchanan', 'Andrew Johnson'],
-            answer: 'Andrew Johnson',
-            name: 'Andrew Johnson',   
-        },
-        {
-            question: 'In 1796, this person discovered the vaccination against smallpox?',
-            answers:['Michael Faraday', 'Edward Jenner', 'Marie Cure', 'Niels Bohr'],
-            answer: 'Edward Jenner',  
-            name: 'Edward Jenner',          
-         },
-        {
-            question: 'What was the first battle of World War I?',
-            answers:['Battle of the Somme', 'Battle of Mullhouse', 'First Battle of Marne', 'Battle of Lorraine'],
-             answer: 'Battle of Mullhouse',
-             name: 'Battle of Mullhouse',
-         },
-         {
-            question: 'What ship was the Japanese surrender signed on?',
-            answers: ['Yorktown', 'Minnesota', 'Iowa', 'Missouri'],
-             answer: 'Missouri',
-             name: 'Missouri'
-         },
-        {
-            question: 'What year was the world wide web invented?',
-            answers: ['1989', '1988', '1987', '1990'],
-            answer: '1989',
-             name: '1989',
-        },
-     ];  
-   
-
-
-
-
-// var start= $('#start-btn');
-// start.addEventListener('click', function(){
-// $('.mainScreen').show();
-// $().parent().hide();
-// coutdown(60);
-// questionDisplay();
-// });
-// console.log('click!');
-// console.log(this);
-
-//show questions
-
+  $("#wrong").on(select){
+      
+  }  
+}
 var questionDisplay = function() {
  $(".myQuestions :not('#sub-but')").empty();
 
