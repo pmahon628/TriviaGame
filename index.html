@@ -8,340 +8,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
     <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script src="triviagame.js"></script>
+    <title>Schitts Creek Trivia</title>
 </head>
-
-<body>
-        <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                  <h1 class="heading">History Quiz</h1>
-                  <h5 class="first">Ten question quiz to test your history knowledge</h5>
-                  <h6 class="second">Best of luck and enjoy!</h6>
-                </div>
-              </div>
-
-<form>
- <div class="container">
-         <div class="card">
-                <div class="form-group"> <!-- Radio group !-->
-                    <label class="control-label">What year did the Battle of Hastings occur??</label>
-                    <!--  -->
-                    <div class="radio">
-                        <label>
-                        <input type="radio" id="wrong" value="1115">
-                        1115
-                      </label>
-                    </div>
-                    <!--  -->
-                    <div class="radio">
-                      <label>
-                        <input type="radio"  id="right" value="1066">
-                        1066
-                      </label>
-                </div>
-                </div>
-                    <!--  -->
-                	<div class="radio">
-                        <label>
-                <input type="radio" id="wrong" value="1123">
-                        1123
-                      </label>
-                    </div>
-                    <!--  -->
-                    <div class="radio">
-                      <label>
-                        <input type="radio"  id="wrong" value="987">
-                       987
-                      </label>
-                    </div>
-                </div>
-            </div>		
-            
-<div class="container">
-    <div class="card">
-        <div class="form-group"> <!-- Radio group !-->
-                <label class="control-label">What river did  U.S and British forces cross to enter Germany in WW2?</label>
-                <!--  -->
-                <div class="radio">
-                    <label>
-                    <input type="radio" id="wrong" value="Danube">
-                    Danube
-                  </label>
-                </div>
-                <!--  -->
-                <div class="radio">
-                  <label>
-                    <input type="radio"  id="wrong" value="Elbe">
-                    Elbe
-                  </label>
-            </div>
-                <!--  -->
-                <div class="radio">
-                    <label>
-            <input type="radio" id="right" value="Rhine">
-                    Rhine
-                  </label>
-                </div>
-                <!--  -->
-                <div class="radio">
-                  <label>
-                    <input type="radio"  id="wrong" value="Seine">
-                   Seine
-                  </label>
-                </div>
-            </div>
-       </div>
-</div>		
-
-    <div class="container">
-         <div class="card">
-            <div class="form-group"> <!-- Radio group !-->
-            <label class="control-label">Who was king of England during the American Revolution?</label>
-            <!--  -->
-            <div class="radio">
-                <label>
-                <input type="radio" id="wrong" value="HenryVII">
-                Henrey VII
-              </label>
-            </div>
-            <!--  -->
-            <div class="radio">
-              <label>
-                <input type="radio"  id="wrong" value="GeorgeIV">
-                George IV
-              </label>
-        </div>
-            <!--  -->
-            <div class="radio">
-                <label>
-        <input type="radio" id="right" value="GeorgeIII">
-                George III
-              </label>
-            </div>
-            <!--  -->
-            <div class="radio">
-              <label>
-                <input type="radio"  id="wrong" value="GeorgeII">
-               George II
-              </label>
-            </div>
-        </div>
-    </div>	
-</div>	
-    <!--  -->
- <div class="container">
-    <div class="card">
-        <div class="form-group"> <!-- Radio group !-->
-        <label class="control-label">Who was the last King of Russia, and when did he die?</label>
-        <!--  -->
-        <div class="radio">
-            <label>
-            <input type="radio" id="right" value="nTwo18">
-            Nicholas II, 1918
-          </label>
-        </div>
-        <!--  -->
-        <div class="radio">
-          <label>
-            <input type="radio"  id="wrong" value="cThree17">
-            Charles III, 1917
-          </label>
-    </div>
-        <!--  -->
-        <div class="radio">
-            <label>
-    <input type="radio" id="wrong" value="nTwo17">
-            Nicholas II, 1917
-          </label>
-        </div>
-        <!--  -->
-        <div class="radio">
-          <label>
-            <input type="radio"  id="wrong" value="IFour14">
-           Ivan IV, 1914
-          </label>
-        </div>
-    </div>	
-   </div>
-</div>	
-<!--  -->
-<div class="container">
-<div class="card">
-<div class="form-group"> 
-    <label class="control-label">Who was the first secretary of treasury?</label>
-    <!--  -->
-    <div class="radio">
-        <label>
-        <input type="radio" id="wrong" value="tJeff">
-        Thomas Jefferson
-      </label>
-    </div>
-    <!--  -->
-    <div class="radio">
-      <label>
-        <input type="radio"  id="wrong" value="bFrank">
-        Benjamin Franklin
-      </label>
-</div>
-    <!--  -->
-    <div class="radio">
-        <label>
-<input type="radio" id="right" value="aHam">
-        Alexander Hamilton
-      </label>
-    </div>
-    <!--  -->
-    <div class="radio">
-      <label>
-        <input type="radio"  id="wrong" value="jAdams">
-       John Adams
-      </label>
+  <body>
+    <h1 class="header">Trivia</h1>
+    <div class="wrapper">
+      <div class="timer"></div>
+      <div class="image"></div>
+      <div class="right"></div>
+      <div class="wrong"></div>
+      <div class="unanswered"></div>
+      <div class="questions"></div>
+      <div class="showcur"></div>
+      <div class="answers"></div>
+      
+      <button class="start animated bounceInUp">Start Game!</button>
+      <button class="reset animated bounceInDown">Reset Game!</button>
+      <div class="rules animated rubberBand">
+          Just click that start button, but be warned friend you must answer each question in 10 seconds!
       </div>
-    </div>		
+      
   </div>
-</div>
-<!--  -->
-<div class="container">
-<div class="card">
-<div class="form-group"> <!-- Radio group !-->
-    <label class="control-label">In 1796, this person discovered the vaccination against smallpox?</label>
-    <div class="radio">
-        <label>
-        <input type="radio" id="wrong" value="mFaraday">
-        Michael Faraday
-      </label>
+      
+
     </div>
-    <!--  -->
-    <div class="radio">
-      <label>
-        <input type="radio"  id="right" value="eJenner">
-        Edwar Jenner
-      </label>
-</div>
-    <!--  -->
-    <div class="radio">
-        <label>
-<input type="radio" id="wrong" value="mCure">
-        Marie Cure
-      </label>
-    </div>
-    <!--  -->
-    <div class="radio">
-      <label>
-        <input type="radio"  id="wrong" value="nBohr">
-     Neils Bohr
-      </label>
-   </div>
-  </div>
-</div>
-<!--  -->
-<div clas="container">
-<div class="card">
-<div class="form-group"> <!-- Radio group !-->
-    <label class="control-label">What was the first battle of World War One?</label>
-    <!--  -->
-    <div class="radio">
-        <label>
-        <input type="radio" id="wrong" value="Somme">
-        Battle of the Somme
-      </label>
-    </div>
-    <!--  -->
-    <div class="radio">
-      <label>
-        <input type="radio"  id="right" value="Mullhouse">
-        Battle of Mullhouse
-      </label>
-</div>
-    <!--  -->
-    <div class="radio">
-        <label>
-<input type="radio" id="wrong" value="Marne">
-        First Battle of Marne
-      </label>
-    </div>
-    <!--  -->
-    <div class="radio">
-      <label>
-        <input type="radio"  id="wrong" value="Lorraine">
-       Battle of Lorraine
-      </label>
-  </div>		
-  </div>
-</div>
-<!-- -->
-<div  class="container">
-    <div class="card">
-        <div class="form-group"> 
-            <label class="control-label">What ship was the Japanese surrender signed on?</label>
-            <!--  -->
-            <div class="radio">
-                <label>
-                <input type="radio" id="wrong" value="Yorktown">
-                Yorktown
-              </label>
-            </div>
-            <!--  -->
-            <div class="radio">
-              <label>
-                <input type="radio"  id="wrong" value="Minnesota">
-                Minnesota
-              </label>
-        </div>
-            <!--  -->
-            <div class="radio">
-                <label>
-        <input type="radio" id="right" value="Missouri">
-                Missouri
-              </label>
-            </div>
-            <!--  -->
-            <div class="radio">
-              <label>
-                <input type="radio"  id="wrong" value="Iowa">
-               Iowa
-              </label>
-        </div>		
-   </div>
-</div>
-<!--  -->
-<div class="container">
-    <div class="card">
-        <div class="form-group"> 
-            <label class="control-label">What year was the world wide web invented?</label>
-            <!--  -->
-            <div class="radio">
-                <label>
-                <input type="radio" id="right" value="1989">
-                1989
-              </label>
-            </div>
-            <!--  -->
-            <div class="radio">
-              <label>
-                <input type="radio"  id="wrong" value="1988">
-                1988
-              </label>
-        </div>
-            <!--  -->
-            <div class="radio">
-                <label>
-        <input type="radio" id="wrong" value="1987">
-               1987
-              </label>
-            </div>
-            <!--  -->
-            <div class="radio">
-              <label>
-                <input type="radio"  id="wrong" value="1990">
-               1990
-              </label>
-            </div>
-    </div>
- </div>
-</div>		
-<div class="form-group"> 
-    <button class="btn btn-primary" id="submit" name="submit" type="submit">Submit</button>
-</div>
-</body>
-</html>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./javascript/app.js"></script>
+  </body>
+  </html>
+
+
