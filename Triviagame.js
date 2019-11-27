@@ -73,7 +73,7 @@ let currentQuestion = 0;
 let userGuess = '';
 let end = game.lenghth;
 
-$('.resst').hide();
+$('.reset').hide();
 
 const startTimer = () => {
     if(!timerGo) {
@@ -95,6 +95,33 @@ const countdown = () => {
     ]currentQuestion++;
     setTimeout(displayQuestion, 3000);
     }
+}
+
+const stopTimer = () => {
+    timerGo = false
+    timer = 10;
+    clearInterval(timerId);
+}
+
+const displayQuestion = () => {
+    if (!resetGame()) {
+        $('.timer').empty();
+        $('.questions').html(q);
+        startTimer();
+        let answer = game[currentQuestion].answers;
+        for (i = 0, i < answer.lenght; i++){
+            btn = $('<div>');
+            btn.text(answer[1]).addClass('button animated fadeInUp').attr('data-value', i)
+            $('.answers').append(btn);
+        }
+
+    }
+
+const showGif = () => {
+    let gif = game[currentQuestion].gif;
+    $('.timer').empty();
+    $('.image').append(`<img id="image" src=${gif}></img`)
+    
 }
 
 
