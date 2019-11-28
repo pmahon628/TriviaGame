@@ -121,8 +121,83 @@ const showGif = () => {
     let gif = game[currentQuestion].gif;
     $('.timer').empty();
     $('.image').append(`<img id="image" src=${gif}></img`)
-    
+
 }
 
+const checkCorrect = () => {
+    if (userGuess === game[currentQuestion].correct){
+        stopTimer();
+        right++;
+        showGif;
+        $('.answers').empty();
+        $('.questions').empty();
+        currentQuestion++;
+        setTimeout(() => {
+          $('#image').remove();
+          displayQuestion();
+        }, 3000;
+        } else {
+            wrong++;
+            userGuess = "";
+            stopTimer();
+            $('.answers').empty();
+            $('.questions').empty();
+            $('.timer').empty();
+            $('.showcur').text("Wrong! The correct answer is: ' + game[currentQuestion].answers[game[currentQuestion].correct])
+            currentQuestion++;
+            setTimeout(() => { 
+             $('.showcur').empty;
+             displayQuestion();
+            }, 3000;
+        }
+}
 
+const resetGame = () => {
+    if (currentQuestion === end) {
+        $('.questions').empty();
+        $('.timer').empty();
+        $('.right').html(`You got ${right} Correct!`)
+        $('.wrong').html(`You got ${wrong} Wrong!`)
+        $('.unanswered').html(`You forgot to answer ${unanswered} questions`)
+        $('.reset').show();
+        return true;
+    }
+}
 
+const newGame = () => {
+    $('.reset').hide();
+    $('.answers').empty();
+    $('.questions').empty();
+    $('.timer').empty();
+    $('.right').empty();
+    $('.wrong').empty();
+    $('.unanswered').empty();
+    $('.start-pic').empty();
+    $('.start').show();
+    $('.rules').show();
+    $('wrapper').css({ 'border': '', 'backgrounf': '', 'box-shawdow': ''})
+}
+
+$('.start').on('click', function () {
+    $(this).hide();
+    $('.wrapper').css({ 'border': '1pt solid black', 'background': '#E3DAC9', 'box-shadow': '0 0 75px black' });
+    $('.start-pic').hide();
+    $('.rules').hide();
+    currentQuestion = 0;
+    wrong = 0;
+    right = 0;
+    unanswered = 0;
+    startTimer();
+    displayQuestion();
+})
+
+$('.answers').on('click', '.button', function () {
+    userGuess = parseInt($(this).attr('data-value'))
+    checkCorrect();
+})
+
+$('.reset').on('click', function () {
+    newGame()
+})
+
+});
