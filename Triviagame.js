@@ -4,74 +4,73 @@ $(function (){
             question: 'Who was the Roses business manager? :',
             answers: ['Mike', 'James', 'Eli', 'Patrick' ],
             correct: 2,
-            image: './images/babyJohn.jpeg',
+            image: './images/babyJohn.jpg',
         },
         {
             question: 'This is the the town logo:',
             answers: ['Welcome Home', 'Happy To See You', 'Welcome Back', 'Where Everyone Fits In' ],
             correct: 3,
-            image: './images/townSign.jpeg',
+            image: './images/townSign.jpg',
         },
         {
             question: 'What TV show did Moira star in? :',
             answers: ['Sunrise Bay', 'All My Sisters', 'Ocean View', 'Our Family' ],
             correct: 0,
-            image: './images/davidMoira.jpeg',
+            image: './images/davidMoira.jpg',
         },
         {
             question: 'What store was before Rose Apothecary:',
             answers: ['Drugstore', 'Bookstore', 'General Store', 'Post Office' ],
             correct: 2,
-            image: './patDavid./images/daivdPatjpeg',
+            image: './patDavid./images/patDavid.jpg',
         },
         {
             question: 'Who sings Simply The Best? :',
             answers: ['Etta James', 'Tina Turner', 'Whitney Houston', 'Celine Dion' ],
             correct: 1,
-            image: './fieldDavid',
+            image: './images/fieldDavid.jpg',
         },
         {
             question: 'Who was Alexis ex-boyfreind?: ',
             answers: ['Mike', 'Miguel', 'Tim', 'Stavros' ],
             correct: 3,
-            image: '',   
+            image: './images/annie.jpg',   
         },
         {
             question: 'Who was the Roses business manager:',
             answers: ['Mike', 'James', 'Eli', 'Patrick' ],
-            correct: 2
-            image: '',
+            correct: 2,
+            image: './images/johnMoria.jpg',
         },
         {
-            question: 'Who was the Roses business manager:',
-            answers: ['Mike', 'James', 'Eli', 'Patrick' ],
-            correct: 2
-            image: '',
+            question: 'What does Roland take from the Roses in the first episode:',
+            answers: ['Shoes', 'Necklace', 'Door', 'Suitcases' ],
+            correct: 2,
+            image: './images/johnRoland.jpg',
         },
         {
             question: 'Who does David stay with when he runs away? :',
             answers: ['Bob', 'The Amish', 'a family in Elmdale', 'Noone' ],
             correct: 1,
-            image: '',
+            image: './imgages/fieldDavid.jpg',
         },
         {
             question: 'Who does Patrick work with when he meets David?:',
             answers: ['Bob', 'Roland', 'Ray', 'Ronnie'],
             correct: 2,
-            image: '',
-        }],
+            image: './images/Jocelyn.jpg',
+        }];
 
-
-// Variables:
 let timer = 10;
-let timerId;
+let timerID;
 let timerGo = false;
 let unanswered = 0;
 let right = 0;
 let wrong = 0;
 let currentQuestion = 0;
-let userGuess = '';
-let end = game.lenghth;
+let userGuess = "";
+let end = game.length;
+
 
 $('.reset').hide();
 
@@ -84,16 +83,16 @@ const startTimer = () => {
 
 const countdown = () => {
     $('.timer').html(`<h3>Go Faster! ${timer}</h3>`)
-    console.log(timer)
+    console.log('timer')
 
     if (timer < 0){
         unanswered++;
         stopTimer();
         $('.answers').empty();
         $('.questions').empty();
-        $('.timer').html('You took to long.  The correct answer was ' + game[currentQuestion].answers[game[currentQuestion]);
-    ]currentQuestion++;
-    setTimeout(displayQuestion, 3000);
+        $('.timer').html('You took to long.  The correct answer was ' + game[currentQuestion].answers[game[currentQuestion]
+        ]); currentQuestion++;
+        setTimeout(displayQuestion, 3000);
     }
 }
 
@@ -109,7 +108,7 @@ const displayQuestion = () => {
         $('.questions').html(q);
         startTimer();
         let answer = game[currentQuestion].answers;
-        for (i = 0, i < answer.lenght; i++){
+        for (i = 0; i < answer.length; i++){
             btn = $('<div>');
             btn.text(answer[1]).addClass('button animated fadeInUp').attr('data-value', i)
             $('.answers').append(btn);
@@ -117,10 +116,10 @@ const displayQuestion = () => {
 
     }
 
-const showGif = () => {
-    let gif = game[currentQuestion].gif;
+const showImage = () => {
+    let gif = game[currentQuestion].image;
     $('.timer').empty();
-    $('.image').append(`<img id="image" src=${gif}></img`)
+    $('.image').append(`<img id="image" src=${image}></img`)
 
 }
 
@@ -135,7 +134,7 @@ const checkCorrect = () => {
         setTimeout(() => {
           $('#image').remove();
           displayQuestion();
-        }, 3000;
+        }, 3000);
         } else {
             wrong++;
             userGuess = "";
@@ -175,10 +174,11 @@ const newGame = () => {
     $('.start-pic').empty();
     $('.start').show();
     $('.rules').show();
-    $('wrapper').css({ 'border': '', 'backgrounf': '', 'box-shawdow': ''})
+    $('wrapper').css({ 'border': '', 'background': '', 'box-shawdow': ''})
 }
 
 $('.start').on('click', function () {
+    console.log('click');
     $(this).hide();
     $('.wrapper').css({ 'border': '1pt solid black', 'background': '#E3DAC9', 'box-shadow': '0 0 75px black' });
     $('.start-pic').hide();
