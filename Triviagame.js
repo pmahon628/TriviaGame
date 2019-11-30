@@ -135,6 +135,7 @@ const checkCorrect = () => {
           $('#image').remove();
           displayQuestion();
         }, 3000);
+
         } else {
             wrong++;
             userGuess = "";
@@ -142,12 +143,12 @@ const checkCorrect = () => {
             $('.answers').empty();
             $('.questions').empty();
             $('.timer').empty();
-            $('.showcur').text("Wrong! The correct answer is: ' + game[currentQuestion].answers[game[currentQuestion].correct])
+            $('.showcur').text('Wrong! The correct answer is: ' + game[currentQuestion].answers[game[currentQuestion].correct])
             currentQuestion++;
             setTimeout(() => { 
              $('.showcur').empty;
              displayQuestion();
-            }, 3000;
+            }, 3000);
         }
 }
 
@@ -198,6 +199,6 @@ $('.answers').on('click', '.button', function () {
 
 $('.reset').on('click', function () {
     newGame()
-})
+  })
 
 });
