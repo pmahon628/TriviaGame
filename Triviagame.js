@@ -2,64 +2,64 @@ $(function (){
     const game = [
 
         {
-            question: 'Who was the Roses business manager? :',
-            answers: ['Mike', 'James', 'Eli', 'Patrick' ],
+            question: 'What is Raymond Holts middle name? :',
+            answers: ['John', 'James', 'Jacob', 'Jojo' ],
             correct: 2,
-            image: './images/babyJohn.jpg',
+            image: './images/HoltMiddle.jpg',
         },
         {
-            question: 'This is the the town logo:',
-            answers: ['Welcome Home', 'Happy To See You', 'Welcome Back', 'Where Everyone Fits In' ],
+            question: 'What does Terry eat that gets him fat?:',
+            answers: ['Peanuts', 'Brazil Nuts', 'Mango Yogurt', 'Cacao Nibs' ],
             correct: 3,
-            image: './images/townSign.jpg',
+            image: './images/FatTerry',
         },
         {
-            question: 'What TV show did Moira star in? :',
-            answers: ['Sunrise Bay', 'All My Sisters', 'Ocean View', 'Our Family' ],
+            question: 'How many brothers does Amy Santiago have? :',
+            answers: ['Seven', 'Four', 'Five', 'Three' ],
             correct: 0,
-            image: './images/davidMoira.jpg',
+            image: './images/AmyBros.jpg',
         },
         {
-            question: 'What store was before Rose Apothecary:',
-            answers: ['Drugstore', 'Bookstore', 'General Store', 'Post Office' ],
+            question: 'What inspires Jake to become a cop?:',
+            answers: ['His Mom', 'DC Parlov', 'Die Hard', 'The Show Cops' ],
             correct: 2,
-            image: './patDavid./images/patDavid.jpg',
+            image: './patDavid./images/JakeDieHard.jpg',
         },
         {
-            question: 'Who sings Simply The Best? :',
-            answers: ['Etta James', 'Tina Turner', 'Whitney Houston', 'Celine Dion' ],
+            question: 'Who did Adrian  Pimento work for undercover? :',
+            answers: ['Max the Killer', 'Jimmy Figgus', 'Pablo Jones', 'Jimmy Aanderson' ],
             correct: 1,
-            image: './images/fieldDavid.jpg',
+            image: './images/Pimento.jpg',
         },
         {
-            question: 'Who was Alexis ex-boyfreind?: ',
-            answers: ['Mike', 'Miguel', 'Tim', 'Stavros' ],
+            question: 'What is the company Jake and Charles invest in?: ',
+            answers: ['Aarbonne', 'Nutri Now', 'Beach Body', 'Nutri Boom' ],
             correct: 3,
-            image: './images/annie.jpg',   
+            image: './images/NutriBoom.jpg',   
         },
         {
-            question: 'Who was the Roses business manager:',
-            answers: ['Mike', 'James', 'Eli', 'Patrick' ],
+            question: 'What does Doug Judy name Holts new car?:',
+            answers: ['Gertie', 'Amber', 'Sexarella', 'Rosa' ],
             correct: 2,
-            image: './images/johnMoria.jpg',
+            image: './images/Sexarella.jpg',
         },
         {
-            question: 'What does Roland take from the Roses in the first episode:',
-            answers: ['Shoes', 'Necklace', 'Door', 'Suitcases' ],
+            question: 'What is Jakes favorite pizza place that gets burned down called?:',
+            answers: ['Marcos', 'Ginos', 'Sals', 'Gepettos' ],
             correct: 2,
-            image: './images/johnRoland.jpg',
+            image: './images/SalsPizza.jpg',
         },
         {
-            question: 'Who does David stay with when he runs away? :',
-            answers: ['Bob', 'The Amish', 'a family in Elmdale', 'Noone' ],
+            question: 'What is Sully and Hitchcocks favorite restaurant? :',
+            answers: ['Hot Dog Truck', 'Wing Sluts', 'Pizza Hut', 'Rib Emporioum' ],
             correct: 1,
-            image: './imgages/fieldDavid.jpg',
+            image: './images/Wings',
         },
         {
-            question: 'Who does Patrick work with when he meets David?:',
-            answers: ['Bob', 'Roland', 'Ray', 'Ronnie'],
+            question: 'What is the name of Holts Dog?:',
+            answers: ['Marc', 'Beowulf', 'Cheddar', 'Trevor'],
             correct: 2,
-            image: './images/Jocelyn.jpg',
+            image: './images/Cheddar.jpg',
         }];
 
         let timer = 10;
@@ -82,7 +82,7 @@ $(function (){
         }
     
         const countDown = () => {
-            $('.timer').html(`<h2>Hurry up please... <br>${timer}</h2>`)
+            $('.timer').html(`<h2>You have ${timer} seconds to answer the question!</h2>`)
             console.log(timer)
     
             if (timer < 0) {
@@ -117,10 +117,10 @@ $(function (){
             }
         }
     
-        const showGif = () => {
+        const showImage = () => {
             let gif = game[currentQuestion].gif;
             $('.timer').empty();
-            $('.image').append(`<img id="image" src='${gif}'></img>`)
+            $('.image').append(`<img id="image" src='${image}'></img>`)
         }
     
     
@@ -200,4 +200,5 @@ $(function (){
     
         $('.reset').on('click', function () {
             newGame()
-    });
+    })
+});
