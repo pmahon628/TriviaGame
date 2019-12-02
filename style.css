@@ -1,11 +1,27 @@
-/* .card {
+.header {
+  padding: 35px;
+  text-align: center;
+}
+
+.Jumbotron-fluid{
+    
     padding: 20px;
-    }
-.Container {
+}
+
+.start-game {
+    background-color: blue;
     padding: 10px;
 }
 
-.btn {
-    justify-content: center;
-    padding: 20px;
-} */
+.Reset {
+    background-color: red;
+    padding: 10px;
+}
+
+.rules {
+    margin: 10px;
+}
+
+.wrapper {
+    background-color: aliceblue;
+}
