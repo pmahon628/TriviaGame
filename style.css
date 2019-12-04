@@ -1,6 +1,11 @@
+body {
+    background-image: url('../TriviaGame/images/cast.jpg');
+}
+
 .header {
   padding: 35px;
   text-align: center;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .Jumbotron-fluid{
@@ -8,7 +13,7 @@
     padding: 20px;
 }
 
-.start-game {
+.start {
     background-color: blue;
     padding: 10px;
 }
@@ -24,4 +29,19 @@
 
 .wrapper {
     background-color: aliceblue;
+    margin-top: 125px;
+}
+
+.right, .questions, {
+    padding: 20px;
+    margin: 25px;
+}
+
+h2 {
+    font-family: 'Prompt', sans-serif;
+
+}
+
+.questions{
+    font-family: 'Monda', sans-serif;
 }
