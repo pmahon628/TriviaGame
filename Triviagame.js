@@ -5,7 +5,7 @@ $(function (){
             question: 'What is Raymond Holts middle name? :',
             answers: ['John', 'James', 'Jacob', 'Jojo' ],
             correct: 2,
-            image: './images/HoltMiddle.jpg',
+            image: '../Triviagame/images/HoltMiddle.jpg',
         },
         {
             question: 'What does Terry eat that gets him fat?:',
@@ -83,7 +83,7 @@ $(function (){
     
         const countDown = () => {
             $('.timer').html(`<h2>You have ${timer} seconds to answer the question!</h2>`)
-            console.log(timer)
+            console.log('timer')
     
             if (timer < 0) {
                 unanswered++;
@@ -182,7 +182,7 @@ $(function (){
     
         $('.start').on('click', function () {
             $(this).hide();
-            $('.wrapper').css({ 'border': '1pt solid black', 'background': '#E3DAC9', 'box-shadow': '0 0 75px black' });
+            $('.wrapper').css({ 'border': '15pt solid black', 'background': 'lightblue', 'box-shadow': '0 0 75px black' });
             $('.start-pic').hide();
             $('.rules').hide();
             currentQuestion = 0;
