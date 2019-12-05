@@ -6,7 +6,7 @@ body {
   padding: 35px;
   text-align: center;
   font-family: 'Permanent Marker', cursive;
-}
+ }
 
 .Jumbotron-fluid{
     
@@ -42,6 +42,29 @@ h2 {
 
 }
 
-.questions{
+.questions, .answers, {
     font-family: 'Monda', sans-serif;
+    margin:  15px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    cursor: pointer;
 }
+
+.showcur {
+    margin-top: 35px;
+    font-weight: bold;
+}
+
+.button {
+    margin: 0px 10px;
+    padding: 15px 20px;
+    background: rgba(205, 201, 227, 0.63);
+    color: rgba(255,255,255,1);
+    font-weight: bold;
+    box-shadow: 0 0 10px black;
+    text-shadow: 0 0 10px black;
+    border: 2pt inset black;
+    border-radius: 5%;
+}
+
