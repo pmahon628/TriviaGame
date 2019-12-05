@@ -118,7 +118,7 @@ $(function (){
         }
     
         const showImage = () => {
-            let gif = game[currentQuestion].gif;
+            let image = game[currentQuestion].image;
             $('.timer').empty();
             $('.image').append(`<img id="image" src='${image}'></img>`)
         }
@@ -128,7 +128,7 @@ $(function (){
             if (userGuess === game[currentQuestion].correct) {
                 stopTimer();
                 right++;
-                showGif();
+                showImage();
                 $('.answers').empty();
                 $('.questions').empty();
                 currentQuestion++;
