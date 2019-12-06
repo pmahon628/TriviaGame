@@ -5,25 +5,25 @@ $(function (){
             question: 'What is Raymond Holts middle name? :',
             answers: ['John', 'James', 'Jacob', 'Jojo' ],
             correct: 2,
-            image: '../Triviagame/images/HoltMiddle.jpg',
+            image: './images/HoltMiddle.jpg',
         },
         {
             question: 'What does Terry eat that gets him fat?:',
             answers: ['Peanuts', 'Brazil Nuts', 'Mango Yogurt', 'Cacao Nibs' ],
             correct: 3,
-            image: './images/FatTerry',
+            image: './images/FatTerry.jpg',
         },
         {
             question: 'How many brothers does Amy Santiago have? :',
             answers: ['Seven', 'Four', 'Five', 'Three' ],
             correct: 0,
-            image: './images/AmyBros.jpg',
+            image: './images/AmyBros.png',
         },
         {
             question: 'What inspires Jake to become a cop?:',
             answers: ['His Mom', 'DC Parlov', 'Die Hard', 'The Show Cops' ],
             correct: 2,
-            image: './patDavid./images/JakeDieHard.jpg',
+            image: './images/JakeDieHard.jpg',
         },
         {
             question: 'Who did Adrian  Pimento work for undercover? :',
@@ -53,7 +53,7 @@ $(function (){
             question: 'What is Sully and Hitchcocks favorite restaurant? :',
             answers: ['Hot Dog Truck', 'Wing Sluts', 'Pizza Hut', 'Rib Emporioum' ],
             correct: 1,
-            image: './images/Wings',
+            image: './images/Wings.jpg',
         },
         {
             question: 'What is the name of Holts Dog?:',
