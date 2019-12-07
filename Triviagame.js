@@ -52,7 +52,7 @@ $(function (){
         {
             question: 'What is Sully and Hitchcocks favorite restaurant? :',
             answers: ['Hot Dog Truck', 'Wing Sluts', 'Pizza Hut', 'Rib Emporioum' ],
-            correct: 1,
+            correct: 0,
             image: './images/Wings.jpg',
         },
         {
