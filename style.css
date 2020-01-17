@@ -23,12 +23,16 @@ body {
     padding: 10px;
 }
 
+.around {
+    background-color: navy;
+}
+
 .rules {
     margin: 10px;
 }
 
 .wrapper {
-    background-color: aliceblue;
+    background-color: yellow;
     margin-top: 125px;
 }
 
@@ -39,7 +43,7 @@ h2 {
 
 .questions, .answers, {
     font-family: 'Monda', sans-serif;
-    margin:  15px;
+     margin:  15px;
     display: flex;
     padding: 20px;
     justify-content: space-between;
@@ -72,6 +76,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     width: auto;
+    opacity: 0;
 
 }
 
