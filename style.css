@@ -1,5 +1,7 @@
 body {
     background-image: url('../TriviaGame/images/cast.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -10,7 +12,6 @@ body {
  }
 
 .Jumbotron-fluid{
-    
     padding: 20px;
 }
 
