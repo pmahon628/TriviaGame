@@ -1,5 +1,6 @@
 body {
     background-image: url('../TriviaGame/images/cast.jpg');
+    
 }
 
 .header {
@@ -38,7 +39,7 @@ body {
 
 h2 {
     font-family: 'Prompt', sans-serif;
-
+    color: white;
 }
 
 .questions, .answers, {
@@ -80,3 +81,10 @@ h2 {
 
 }
 
+.questions, {
+    color: white;
+}
+
+.answers, {
+    color: white;
+}
