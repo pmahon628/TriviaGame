@@ -136,8 +136,7 @@ $(function (){
                     $('#image').remove();
                     displayQuestion();
                 }, 3000);
-            } 
-            else {
+            } else {
                 wrong++;
                 userGuess = "";
                 stopTimer();
@@ -183,7 +182,7 @@ $(function (){
     
         $('.start').on('click', function () {
             $(this).hide();
-            $('.wrapper').css({ 'border': '15pt white', 'background': 'white', 'box-shadow': '0 0 75px white' });
+            $('.wrapper').css({ 'border': '15pt solid black', 'background': 'lightblue', 'box-shadow': '0 0 75px black' });
             $('.start-pic').hide();
             $('.rules').hide();
             currentQuestion = 0;
