@@ -11,19 +11,19 @@ $(function (){
             question: 'What does Terry eat that gets him fat?:',
             answers: ['Peanuts', 'Brazil Nuts', 'Mango Yogurt', 'Cacao Nibs' ],
             correct: 3,
-            image: './images/FatTerry.jpg',
+            image: './images/FatTerry',
         },
         {
             question: 'How many brothers does Amy Santiago have? :',
             answers: ['Seven', 'Four', 'Five', 'Three' ],
             correct: 0,
-            image: './images/AmyBros.png',
+            image: './images/AmyBros.jpg',
         },
         {
             question: 'What inspires Jake to become a cop?:',
             answers: ['His Mom', 'DC Parlov', 'Die Hard', 'The Show Cops' ],
             correct: 2,
-            image: './images/JakeDieHard.jpg',
+            image: './patDavid./images/JakeDieHard.jpg',
         },
         {
             question: 'Who did Adrian  Pimento work for undercover? :',
@@ -52,8 +52,8 @@ $(function (){
         {
             question: 'What is Sully and Hitchcocks favorite restaurant? :',
             answers: ['Hot Dog Truck', 'Wing Sluts', 'Pizza Hut', 'Rib Emporioum' ],
-            correct: 0,
-            image: './images/Wings.jpg',
+            correct: 1,
+            image: './images/Wings',
         },
         {
             question: 'What is the name of Holts Dog?:',
@@ -83,7 +83,7 @@ $(function (){
     
         const countDown = () => {
             $('.timer').html(`<h2>You have ${timer} seconds to answer the question!</h2>`)
-            console.log('timer')
+            console.log(timer)
     
             if (timer < 0) {
                 unanswered++;
@@ -118,7 +118,7 @@ $(function (){
         }
     
         const showImage = () => {
-            let image = game[currentQuestion].image;
+            let gif = game[currentQuestion].gif;
             $('.timer').empty();
             $('.image').append(`<img id="image" src='${image}'></img>`)
         }
@@ -128,7 +128,7 @@ $(function (){
             if (userGuess === game[currentQuestion].correct) {
                 stopTimer();
                 right++;
-                showImage();
+                showGif();
                 $('.answers').empty();
                 $('.questions').empty();
                 currentQuestion++;
@@ -182,7 +182,7 @@ $(function (){
     
         $('.start').on('click', function () {
             $(this).hide();
-            $('.wrapper').css({ 'border': '15pt solid black', 'background': 'lightblue', 'box-shadow': '0 0 75px black' });
+            $('.wrapper').css({ 'border': '1pt solid black', 'background': '#E3DAC9', 'box-shadow': '0 0 75px black' });
             $('.start-pic').hide();
             $('.rules').hide();
             currentQuestion = 0;
