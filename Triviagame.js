@@ -182,7 +182,7 @@ $(function (){
     
         $('.start').on('click', function () {
             $(this).hide();
-            $('.wrapper').css({ 'border': '1pt solid black', 'background': '#E3DAC9', 'box-shadow': '0 0 75px black' });
+            $('.wrapper').css({ 'border': '1pt solid black', 'background': 'white', 'box-shadow': '0 0 75px black' });
             $('.start-pic').hide();
             $('.rules').hide();
             currentQuestion = 0;
