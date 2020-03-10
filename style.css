@@ -1,3 +1,10 @@
+.container {
+    background-color: yellow;
+    margin-top: 200px;
+    display: flex;
+    padding: 50px;
+}
+
 body {
     background-image: url('../TriviaGame/images/cast.jpg');
     background-repeat: no-repeat;
@@ -23,6 +30,7 @@ body {
 .Reset {
     background-color: red;
     padding: 10px;
+    display: block;
 }
 
 .around {
@@ -33,18 +41,14 @@ body {
     margin: 10px;
 }
 
-.wrapper {
-    background-color: yellow;
-    margin-top: 125px;
-}
 
 h2 {
     font-family: 'Prompt', sans-serif;
-    color: lightblue;
+    color: darkblue;
 }
 
 .questions, .answers, {
-    color: white;
+    color: red;
     font-family: 'Monda', sans-serif;
      margin:  15px;
     display: flex;
@@ -83,6 +87,11 @@ h2 {
 
 }
 
-.questions, .answers {
-    background-color: lightblue;
+.question, .answers {
+    background-color: white;
+    
+}
+
+.questions {
+    color: red;
 }
